@@ -1,3 +1,15 @@
+Modification on openid-connect-server-webapp
+server-config.xml: modified issuer to match deploy enviroment.
+src/main/resources/db: added clients and scopes as needed into respective SQL script
+
+Build script
+cd /path/to/app/root
+mvn -Dfile.encoding=UTF-8 clean install
+
+java build version: 1.7
+The resulting war is manually deployed on Tomcat.
+
+=========
 An OpenID Connect reference implementation in Java on the Spring platform. For license information see LICENSE.txt. 
 
 This code includes a functioning server (IdP) and client (RP) as well as utility libraries.
